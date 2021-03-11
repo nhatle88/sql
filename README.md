@@ -1,1 +1,1 @@
-# Some SQL code for me.
+# Some SQL code.

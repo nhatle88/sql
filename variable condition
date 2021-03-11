@@ -1,0 +1,6 @@
+sql = "select t.description, b.name, t.created \
+        from building as b right join ticket as t on b.id = t.building_id \
+        where b.name = '"+ building_selected +"'"
+df = pd.read_sql(sql, conn)
+df_grouped_date = df.groupby('date').count().reset_index()
+df_grouped_building = df.groupby('name').count().reset_index().sort_values(by=['created'])

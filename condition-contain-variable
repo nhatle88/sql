@@ -12,3 +12,7 @@ sql = "select t.description, b.name, rt.rating, rt.created, rt.review \
             left join ticket t on rt.ticket_id = t.id \
             left join building b on t.building_id = b.id \
         where b.name NOT IN {}".format(building_hiddenlist)
+        
+        
+# check null
+pd.isna(df['column'])

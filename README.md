@@ -1,6 +1,6 @@
-# Some SQL code.
+# Some SQL code
 
-### use format and variable at the same time
+### 1. Use format and variable at the same time
 ```python
 tb_user = '"user"'
 sql = "select b.name, c.created, c.name as company_name, u.fullname \
